@@ -13,7 +13,8 @@ export const useLocalStorage = (key, initialValue) => {
 
     };
 
-    
-    return [storedValue];
+
+    return [storedValue, setStoredValue];
 
 };
+
