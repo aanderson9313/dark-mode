@@ -5,7 +5,7 @@ import useLocalStorage from '../hooks/useLocalStorage';
  export const useDarkMode = () => {
     const [enabled, setEnabled] = useLocalStorage(key, initialValue)
 
-    useEffect(() {
+    useEffect(() => {
         if (enabled === true) {
             document.body.classList.add('dark-mode');
         } else {
